@@ -1,37 +1,6 @@
-## Welcome to GitHub Pages
+#hello-word
 
-You can use the [editor on GitHub](https://github.com/Wanghigh/-1154/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+  Hi,学长学姐好！
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Wanghigh/-1154/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+  我是来自计科11705班的王豪，对于网络的热爱，让我特别想加入这个web组学习知识。课本上的东西会一些，然而我意识到更多的知识还是要自己去探索，特别是最新的科技水平。我想加入web组，可以学到有用的东西，更可以丰富课余生活。希望学长学姐能够支持我一下！谢谢！
+                                                                                                                 计科11705班王豪
