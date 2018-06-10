@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title>点击动画</title>
+		<style>
+			body{
+				margin:0;
+				padding:0;
+			}
+			#main{
+				position:relative;
+				width:500px;
+				height:315px;
+				margin:100px auto;
+				background-image:url("images/aixi.jpg");
+				background-size:100%;
+				background-position:center;
+				background-color:#f6c;
+				overflow:hidden;
+				transition:0.5s;
+				border-radius:5px;
+			}
+			#main:hover{
+				background-size:120%;
+				cursor:no-drop;
+				cursor:url(http://i.gtimg.cn/qzone/space_item/orig/3/33139.gif),default;
+			}
+			#main div{
+				position:absolute;
+				left:-490px;
+				width:100%;
+				height:100%;
+				background-color:rgba(0,0,0,0.2);
+				transition:0.5s;
+			}
+			#main div:hover{
+				left:0;
+			}
+			#main div h3{
+				margin-top:10px;
+				height:60px;
+				font-size:24px;
+				text-align:center;
+				line-height:90px;
+			}
+			#main div h3:hover{
+				font-size:35px;
+			}
+			#main div h1{
+				margin-left:50px;
+				line-height:20px;
+				font-size:15px;
+			}
+			#main div h1:hover{
+				font-size:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div>
+				<h3>英雄介绍</h3>
+				<h1><b>姓名：</b>艾希</h1>
+				<h1><b>被动：</b>冰霜射击</h1>
+				<h1><b>Q：</b>游侠的专注</h1>
+				<h1><b>W：</b>万箭齐发</h1>
+				<h1><b>E：</b>鹰击长空</h1>
+				<h1><b>R：</b>魔法水晶箭</h1>
+			</div>
+		</div>
+	</body>
+</html>

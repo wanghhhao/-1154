@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;       /*规定两个并排的带边框的框*/
+}
+  
+body {
+    background-color: #1e1e1e;
+    background-size: cover;      /*将背景图片扩展至足够大，以背景图像完全覆盖背景区域。（背景图像可能某些部分无法显示在定位区域中）*/
+    height: 100vh;               /*vh相对于视窗高度，vw相对于视窗宽度*/
+    letter-spacing: 1px;         /*h1和h2之间得到字母键距*/
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+}
+  
+ul {
+    list-style: none;           /*去除圆点样式*/
+}
+  
+nav {
+    height: 40px;
+    margin: 40px auto;
+    background-color: rgba(23, 23, 50, 0.7);
+    text-align: center;
+    border-radius: 4px;
+}
+.main {
+    display: flex;                /*弹性布局，为盒装模型提供最大的灵活性*/
+    justify-content: center;      /*内容对齐，居中*/
+}
+.main > li {
+    margin: 0 2%;
+}
+.main > li a{
+    border-left:1px solid rgba(23, 23, 50, 1);
+}
+a {
+    text-decoration: none;
+    color: #ffe;
+    text-transform: capitalize;                    /*文本中的每个单词以大写字母开头。*/
+    display: block;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.5s ease-in-out; /*颜色过渡效果，变换时间，变化规律*/
+}
+  
+a:hover {
+    background-color: #631818;
+}
+  
+.drop li {
+    opacity: 0;                                     /*设置不透明度*/
+    transform-origin: top center;                   /*设置旋转元素的基点位置*/
+}
+  
+.drop li a {
+    background-color: rgba(23, 23, 50, 0.7);
+    padding: 10px 0;
+}
+
+        /*----制作动画 ----*/
+
+.main li:hover .drop li:first-of-type {
+    animation: drop 0.3s ease-in-out forwards;
+    animation-delay: 0.3s;                        /*规定动画之前的延迟，可制作出连接的动作效果*/
+}
+  
+.main li:hover .drop li:nth-of-type(2) {
+    animation: drop 0.3s ease-in-out forwards;
+    animation-delay: 0.6s;
+}
+  
+.main li:hover .drop li:nth-of-type(3) {
+    animation: drop 0.3s ease-in-out forwards;
+    animation-delay: 0.9s;
+}
+  
+.main li:hover .drop li:last-of-type {
+    animation: drop 0.3s ease-in-out forwards;
+    animation-delay: 1.2s;
+}
+  
+@keyframes drop {                             /*制作的动画*/
+    from {
+      opacity: 0;
+      transform: translateX(30px) rotateY(90deg);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) rotateY(0);
+    }
+}

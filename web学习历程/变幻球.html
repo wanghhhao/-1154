@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="王豪">
+	<meta name="Keywords" content="5.3">
+	<meta name="Description" content="5.3制作的HTML">
+	<title>变幻球</title>
+	<style>
+	body{margin:0;}
+	#main{
+		width:100%;
+		height:1000px;
+		background-color:#000000;
+	}
+	.box{
+		display:flex;/*弹性盒模型*/
+		justify-content:space-around;/*对定了弹性盒模型的子元素在父元素的主轴上是如何排列的：平均分配剩余空间*/
+		align-items:center;/*规定了弹性盒模型的子元素在父元素的交叉上如何排列*/
+		width:500px;
+		height:500px;
+		background-color:#000;
+		margin:0 auto;
+		box-shadow:0px 0px 50px white;
+		filter:blur(10px) contrast(20);
+	}
+	.bubble{
+		width:96px;
+		height:96px;
+		background-color:#ffffff;
+		border-radius:50%;
+	}
+	.bubble:nth-child(2){
+		animation:changePs 2s infinite alternate linear;
+	}/*播放动画 时间 循环 反复 匀速*/
+	@keyframes changePs{
+		from{
+			box-shadow:-330px 0px 0px white;/*设置影子 第一值正负表示右左 第二个值正负表示上下 第三个值表示边缘？（还不太懂）*/
+		}
+		to{
+			box-shadow:330px 0px 0px white;
+		}
+	}
+	</style>
+ </head>
+	<body>
+		<div id="main">
+			<div class="box">
+			<div class="bubble"></div>
+			<div class="bubble"></div>
+			<div class="bubble"></div>
+			</div>
+		</div>
+	</body>
+</html>

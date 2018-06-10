@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>点击放大图片</title>
+	<style>
+		body{
+			margin:0;
+		}
+		.box{
+			display:flex;/*弹性盒模型：一套布局方案*/
+			flex-wrap:wrap;/*换行*/
+			margin:100px auto;
+			width:790px;
+			height:410px;
+			background-color:#000;
+		}
+		.box img{
+			display:block;/*变成盒子*/
+			margin:auto;
+			width:250px;
+			height:190px;
+			transition:0.3s;/*放大时间为0.3s*/
+		}
+		.box img:hover{
+			transform:scale(1.5);
+		}
+	</style>
+ </head>
+	<body>
+		<div class="box">
+			<img src='images/1.jpg'>
+			<img src='images/2.jpg'>
+			<img src='images/3.jpg'>
+			<img src='images/4.jpg'>
+			<img src='images/5.jpg'>
+			<img src='images/6.jpg'>
+		</div>
+	</body>
+</html>

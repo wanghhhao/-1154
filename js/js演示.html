@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <title>js演示</title>
+        <meta charset="UTF-8"/>
+        <style>
+        *{margin:0;padding:0;}
+        #example{
+            width:300px;
+            height:30px;
+        }
+        body input{
+            width:200px;
+            height:30px;
+            background-color:red;
+            border-radius:5px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="example"></div>
+
+        <input type="button" value="去百度查查！" onclick="newDoc()"/>
+        <input type="button" onclick="display_alert()" value="点击惊喜"/>
+
+        <script>
+            text="<p>Browser CodeName:"+navigator.appCodeName+"</p>";
+            document.getElementById("example").innerHTML=text;
+
+            function newDoc()
+            {
+                window.location.assign("http://www.baidu.com");
+            }
+
+            person=new Object();
+            person.firstname="wang";
+            person.lastname="hao";
+            person.age="20";
+            person.eyecolor="black";
+            document.write(person.firstname+person.lastname+" is "+person.age+" years old.");
+        
+            function display_alert()
+            {
+                alert("傻子嘛，点不开的！")
+            }
+        </script>
+    </body>
+</html>
